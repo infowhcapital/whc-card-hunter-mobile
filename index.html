@@ -96,7 +96,7 @@ async function loadLive(){
    const info=el('p','meta');info.textContent='Cardmarket product '+d.productId+' · verkoper '+d.seller+' · conditie '+d.condition+' · offer-ID '+d.offerId;row.append(info);
    const price=el('p');price.textContent='Vraagprijs € '+Number(d.price).toFixed(2)+' · Inkoop incl. verzendbuffer € '+Number(d.allIn).toFixed(2)+' · Mogelijke winst vóór belasting € '+Number(d.netEstimate).toFixed(2)+' · ROI '+Number(d.roiEstimate).toFixed(1)+'%';row.append(price);
    const caution=el('p','muted');caution.textContent=(d.shippingVerified?'Verzending naar NL volgens bron vermeld.':'Exacte NL-verzending ONBEKEND: berekening met conservatieve buffer.')+' Verkoopwaarde is alleen uit andere vraagprijzen geschat. Controleer kaartcode, conditie en echte verkoopprijs.';row.append(caution);
-   const link=el('a');link.href=cm({id:d.productId});link.target='_blank';link.rel='noopener noreferrer';link.textContent='Open exacte productdruk op Cardmarket';row.append(link);target.append(row);
+   const link=el('a');let safeLink=cm({id:d.productId});try{const u=new URL(d.sourceUrl||safeLink);if(u.protocol==='https:'&&['cardmarket.com','www.cardmarket.com'].includes(u.hostname))safeLink=u.toString()}catch{};link.href=safeLink;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Open specifieke aanbieding of kaartdruk op Cardmarket';row.append(link);target.append(row);
   }
  }catch(err){
   state.className='error';
