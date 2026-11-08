@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import { chromium } from 'playwright-core';
+const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',args:['--no-first-run','--disable-extensions']});
+try{
+ const page=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('https://infowhcapital.github.io/whc-card-hunter-mobile/',{waitUntil:'domcontentloaded',timeout:30000});
+ await page.locator('#cards .card').first().waitFor({timeout:20000});
+ const firstCount=await page.locator('#cards .card').count();
+ assert.equal(firstCount,25);
+ const firstName=(await page.locator('#cards .card h3').first().innerText()).trim();
+ await page.locator('#search').fill('___niet_bestaande_kaart_');
+ assert.equal(await page.locator('#cards .card').count(),0);
+ await page.locator('#search').fill(firstName);
+ assert((await page.locator('#cards .card').count())>=1);
+ await page.locator('#cards .card button').first().click();
+ assert.equal(await page.locator('#saved').innerText(),'1');
+ await page.locator('#tabFav').click();
+ assert.equal(await page.locator('#favCards .card').count(),1);
+ await page.locator('#tabCalc').click();
+ await page.locator('#verified').check();
+ await page.locator('#calculate').click();
+ const result=await page.locator('#calcResult').innerText();
+ assert(result.includes('KOOPKANDIDAAT'));
+ assert(result.includes('5,45'));
+ assert.equal(errors.length,0,'No client-side errors');
+ console.log(JSON.stringify({browser:'Edge / Chromium',viewport:'390x844',status:'PASS',loadedCards:firstCount,search:'PASS',favorites:'PASS',calculator:'PASS',pageErrors:errors},null,2));
+}finally{await browser.close()}

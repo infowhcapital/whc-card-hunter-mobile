@@ -23,3 +23,8 @@ Privé-bron: `infowhcapital/whc-card-hunter`, niet toegankelijk voor bezoekers v
 
 ## Test
 `node test-ui.mjs` — controleert de online HTTP-respons, datapakket, JS-syntax en of er geen ruwe Cardmarket-prijzen in de publieke feed zitten.
+
+### Echte mobiele browsertest
+Op 8 november 2026 uitgevoerd op Windows met Microsoft Edge/Chromium, viewport 390×844. De pagina laadde 25 kaarten, zoeken, favorieten, winstcalculator (€5,45 testresultaat) en geen JavaScript-fouten: **PASS**.
+
+Bij herhalen op dezelfde Windows-PC: `npm install --no-save --no-package-lock --ignore-scripts playwright-core@1.65.0` gevolgd door `node test-browser.mjs`. Playwright-core gebruikt de al geïnstalleerde Microsoft Edge en downloadt geen browser.
