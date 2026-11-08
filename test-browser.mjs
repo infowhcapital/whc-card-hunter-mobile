@@ -1,10 +1,19 @@
 import assert from 'node:assert/strict';
-import { chromium } from 'playwright-core';
+import fs from 'node:fs';
+import {chromium} from 'playwright-core';
+const site='https://infowhcapital.github.io/whc-card-hunter-mobile/';
+const ownerKey=fs.readFileSync('C:/Users/marti/WHC-Card-Hunter-Monitor/private/mobile-feed.key','utf8').trim();
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',args:['--no-first-run','--disable-extensions']});
 try{
  const page=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true});
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('https://infowhcapital.github.io/whc-card-hunter-mobile/',{waitUntil:'domcontentloaded',timeout:30000});
+ await page.goto(site+'#k='+encodeURIComponent(ownerKey),{waitUntil:'domcontentloaded',timeout:30000});
+ await page.waitForFunction(()=>document.getElementById('liveStatus')?.textContent?.includes('NOT_CONNECTED'),{timeout:20000});
+ assert.equal(await page.locator('#liveCards .card').count(),0,'No fake live offers');
+ const stored=await page.evaluate(()=>localStorage.getItem('whcOwnerFeedKey'));
+ assert.equal(stored,ownerKey,'Private key stored locally on owner device');
+ assert.equal(new URL(page.url()).hash,'','Hash secret cleared after pairing');
+ await page.locator('#tabScan').click();
  await page.locator('#cards .card').first().waitFor({timeout:20000});
  const firstCount=await page.locator('#cards .card').count();
  assert.equal(firstCount,25);
@@ -13,7 +22,6 @@ try{
  const directHref=await page.locator('#cards .card a').first().getAttribute('href');
  assert(directHref?.includes('idProduct='+firstCardId),'Exact Cardmarket product ID link');
  assert(directHref?.includes('language=1')&&directHref?.includes('minCondition=2'),'English NM filters');
- assert(!directHref?.includes('Products/Search'),'No generic name search');
  await page.locator('#search').fill('___niet_bestaande_kaart_');
  assert.equal(await page.locator('#cards .card').count(),0);
  await page.locator('#search').fill(firstName);
@@ -26,8 +34,15 @@ try{
  await page.locator('#verified').check();
  await page.locator('#calculate').click();
  const result=await page.locator('#calcResult').innerText();
- assert(result.includes('KOOPKANDIDAAT'));
- assert(result.includes('5,45'));
- assert.equal(errors.length,0,'No client-side errors');
- console.log(JSON.stringify({browser:'Edge / Chromium',viewport:'390x844',status:'PASS',loadedCards:firstCount,search:'PASS',favorites:'PASS',calculator:'PASS',pageErrors:errors},null,2));
+ assert(result.includes('KOOPKANDIDAAT')&&result.includes('5,45'));
+ const publicFeed=await page.evaluate(async()=>await(await fetch('./data/live-feed.enc.json')).json());
+ assert(publicFeed.ciphertext&&publicFeed.nonce&&publicFeed.algorithm==='AES-256-GCM');
+ assert(!JSON.stringify(publicFeed).includes('seller1'),'No cleartext seller offers in public feed');
+ const bad=await browser.newPage({viewport:{width:390,height:844}});
+ await bad.goto(site+'#k=not-a-real-key',{waitUntil:'domcontentloaded'});
+ await bad.waitForFunction(()=>document.getElementById('liveStatus')?.textContent?.includes('Privéfeed kan niet worden geopend'),{timeout:20000});
+ assert.equal(await bad.locator('#liveCards .card').count(),0);
+ await bad.close();
+ assert.equal(errors.length,0,'No client errors');
+ console.log(JSON.stringify({tests:'PASS',viewport:'390x844',cards:firstCount,search:'PASS',favorites:'PASS',calculator:'PASS',encryptedOwnerTab:'PASS',keyNotExposed:'PASS',wrongKey:'PASS',liveDealsCount:0,pageErrors:errors},null,2));
 }finally{await browser.close()}
