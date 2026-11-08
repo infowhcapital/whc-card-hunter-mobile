@@ -6,7 +6,7 @@
 header{margin:5px 0 20px}.brand{color:var(--gold);font-size:12px;letter-spacing:.19em;font-weight:900}h1{font-size:clamp(34px,8vw,53px);line-height:1.04;letter-spacing:-.05em;margin:10px 0}h1 em{font-style:normal;color:var(--gold)}h2{margin:0 0 10px;font-size:21px}p{margin:7px 0}.muted,small{color:var(--sub)}.box{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:15px;margin:12px 0}.warning{border-left:3px solid #e8c274;background:#263141;border-radius:0 10px 10px 0;padding:12px;font-size:13px}
 .metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:13px 0}.metrics>div{border:1px solid var(--border);border-radius:10px;background:#091c2d;padding:10px}.metrics b{display:block;color:var(--gold);font-size:22px}.metrics small{display:block;font-size:11px;line-height:1.25}
 button,input,select{font:inherit}button{border:1px solid #b59659;background:linear-gradient(120deg,#f2d493,#dbb774);color:#142132;border-radius:9px;padding:10px 12px;min-height:44px;font-weight:800;cursor:pointer}button.secondary{background:#1b3448;color:var(--gold);border-color:#647589}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #f0d69a;outline-offset:2px}
-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:12px 0}nav button{background:#132c43;color:#dce7ed;border-color:#456076}nav button.active{background:#374657;border-color:#d6b777;color:var(--gold)}
+nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:12px 0}nav button{background:#132c43;color:#dce7ed;border-color:#456076}nav button.active{background:#374657;border-color:#d6b777;color:var(--gold)}
 label{display:block;font-weight:650;font-size:12px;color:#d9e6ef;margin:6px 0}input,select{width:100%;min-height:44px;background:#081b2d;color:#f0f3f8;border:1px solid #526d84;border-radius:9px;padding:9px}
 .controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.controls .wide{grid-column:1/-1}
 .card{padding:14px;border-radius:12px;border:1px solid #385772;background:#0b2439;margin:10px 0}.card h3{font-size:17px;line-height:1.35;margin:0 0 5px}.line{height:1px;background:#304c63;margin:12px 0}.meta{color:var(--sub);font-size:12px}.row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}.score{color:var(--gold);font-size:17px;font-weight:900}.tag{font-size:11px;display:inline-block;border:1px solid #7a6a50;color:#e8d1a2;border-radius:6px;padding:3px 7px;margin:3px 4px 4px 0}.card .row{margin-top:11px}.card button{min-height:34px;padding:6px 9px;font-size:12px}.card a{color:var(--gold);font-weight:700}a{color:var(--gold)}
@@ -15,9 +15,10 @@ footer{text-align:center;color:#9cb1bf;font-size:12px;margin:22px 0 0}.checkrow{
 @media(min-width:700px){main{padding:28px}.controls{grid-template-columns:repeat(4,minmax(0,1fr))}.controls .wide{grid-column:span 2}}
 </style></head><body><main>
 <header><div class="brand">WHC · GRANDPA'S CARD SHOP</div><h1>Card <em>Hunter</em></h1><p class="muted">Mobiele onderzoeksscanner voor Yu-Gi-Oh-kaarten. Geen login, installatie of Python nodig.</p></header>
-<div class="warning"><b>0 geverifieerde koopaanbiedingen.</b> Deze lijst onderzoekt kaarten waarvan de recente prijsontwikkeling onder het 30-daagse gemiddelde ligt. De gratis Cardmarket-feed bevat geen actuele Engelse aanbieders, exacte conditie of verzendkosten. De kaartnaam kan meerdere versies hebben. Controleer dit altijd op Cardmarket.</div>
+<div class="warning"><b>Live deals zijn nog niet actief zolang de aanbieder niet is aangesloten.</b> Deze lijst onderzoekt kaarten waarvan de recente prijsontwikkeling onder het 30-daagse gemiddelde ligt. De gratis Cardmarket-feed bevat geen actuele Engelse aanbieders, exacte conditie of verzendkosten. De kaartnaam kan meerdere versies hebben. Controleer dit altijd op Cardmarket.</div>
 <div class="metrics"><div><b id="n">—</b><small>Kandidaten</small></div><div><b id="date">—</b><small>Laatste bronmeting</small></div><div><b id="saved">0</b><small>Mijn favorieten</small></div></div>
-<nav aria-label="App functies"><button id="tabScan" class="active">Scanner</button><button id="tabFav">Favorieten</button><button id="tabCalc">Winst</button></nav>
+<nav aria-label="App functies"><button id="tabLive" class="active">Live</button><button id="tabScan">Dalingen</button><button id="tabFav">Bewaard</button><button id="tabCalc">Winst</button></nav>
+<section id="live"><div class="box"><h2>Live koopkansen</h2><p class="muted">Dit onderdeel leest versleutelde gegevens die uitsluitend jij met je persoonlijke toegang kunt openen. Een aanbieding is pas een koopkans na controle van druk, leveringskosten en verkoopbaarheid.</p><p id="liveStatus" role="status">Live status controleren…</p><div id="liveCards"></div><button id="liveReload" class="secondary">Vernieuw live status</button></div></section>
 <section id="scan"><div class="box"><div class="row"><h2>Prijsdalingen onderzoeken</h2><button class="secondary" id="refresh">Vernieuw</button></div><p id="dataStatus" role="status">Gegevens ophalen…</p>
 <div class="controls"><div class="wide"><label for="search">Kaartnaam of Cardmarket-ID</label><input id="search" placeholder="Blue-Eyes, Dark Magician, ..."></div><div><label for="kind">Soort kaart</label><select id="kind"><option value="all">Alle</option><option value="Nostalgie">Nostalgie</option><option value="Algemeen">Overige</option></select></div><div><label for="order">Sorteer op</label><select id="order"><option value="score">Grootste onderbouwde prijsafwijking</option><option value="name">Naam A–Z</option></select></div></div>
 <p id="info" class="muted">Nog geen data geladen.</p><div id="cards"></div><button id="more" class="secondary panelhide">Meer tonen</button>
@@ -47,8 +48,8 @@ const numFmt=n=>Number(n).toLocaleString('nl-NL');
 const euro=n=>'€ '+Number(n).toFixed(2).replace('.',',');
 function save(){try{localStorage.setItem('whcHunterFavs',JSON.stringify(favs))}catch{};drawCount()}
 function drawCount(){$('saved').textContent=Object.keys(favs).length}
-function tab(t){for(const [k,v] of [['Scan','scan'],['Fav','favorites'],['Calc','calculator']]){$('tab'+k).classList.toggle('active',k===t);$(v).classList.toggle('panelhide',k!==t)}if(t==='Fav')drawFavs()}
-$('tabScan').onclick=()=>tab('Scan');$('tabFav').onclick=()=>tab('Fav');$('tabCalc').onclick=()=>tab('Calc');
+function tab(t){for(const [k,v] of [['Live','live'],['Scan','scan'],['Fav','favorites'],['Calc','calculator']]){$('tab'+k).classList.toggle('active',k===t);$(v).classList.toggle('panelhide',k!==t)}if(t==='Fav')drawFavs();if(t==='Live')loadLive()}
+$('tabLive').onclick=()=>tab('Live');$('tabScan').onclick=()=>tab('Scan');$('tabFav').onclick=()=>tab('Fav');$('tabCalc').onclick=()=>tab('Calc');
 const el=(name,cls)=>{const e=document.createElement(name);if(cls)e.className=cls;return e};
 const cm=c=>'https://www.cardmarket.com/en/YuGiOh/Products?idProduct='+encodeURIComponent(String(c.id))+'&language=1&minCondition=2';
 function renderCard(c,parent){
@@ -65,5 +66,44 @@ async function load(){const r=$('refresh'),s=$('dataStatus');r.disabled=true;s.t
 $('refresh').onclick=load;
 function calculate(){const ids=['buy','incoming','sell','fee','outgoing','pack','risk','budget'];if(ids.some(x=>$((x)).value.trim()===''||!Number.isFinite(Number($(x).value))||Number($(x).value)<0)||Number($('fee').value)>=100){$('calcResult').textContent='Controleer de bedragen en commissie.';return}const v=x=>Number($(x).value),cost=v('buy')+v('incoming'),profit=v('sell')*(1-v('fee')/100)-cost-v('outgoing')-v('pack')-v('risk'),roi=cost>0?100*profit/cost:0,pass=cost<=v('budget')&&profit>=4&&roi>=35;const approved=pass&&$('verified').checked;$('calcResult').replaceChildren();const b=el('strong',approved?'good':'error');b.textContent=approved?'REKENKUNDIG KOOPKANDIDAAT':'NIET KOPEN / NOG ONDERZOEKEN';const p=el('p');p.textContent='Totale inkoop '+euro(cost)+' · Geschatte nettowinst vóór belasting '+euro(profit)+' · ROI '+roi.toFixed(1).replace('.',',')+'%';const note=el('small');note.textContent='Drempels: maximaal €'+v('budget')+' all-in, minimaal €4 winst en 35% ROI. Verkoopwaarde en conditie blijven eigen verificatie vereisen.';$('calcResult').append(b,p,note)}
 $('calculate').onclick=calculate;$('reset').onclick=()=>{location.reload()};
-drawCount();load();
+// Owner-only encrypted live listings: the decryption key is never part of the public repository or network request.
+function fromBase64Url(s){const base=String(s).replace(/-/g,'+').replace(/_/g,'/');return Uint8Array.from(atob(base),x=>x.charCodeAt(0))}
+async function loadLive(){
+ const state=$('liveStatus'),target=$('liveCards');target.replaceChildren();state.textContent='Privé-status controleren…';
+ const fromLink=new URLSearchParams(location.hash.slice(1)).get('k');
+ let key=fromLink;
+ if(!key){try{key=localStorage.getItem('whcOwnerFeedKey')}catch{}}
+ if(!key){state.textContent='Nog niet gekoppeld op dit toestel. Open de persoonlijke Card Hunter-link om dit onderdeel te activeren. Er worden geen nepdeals getoond.';return}
+ try{
+  const keyBytes=fromBase64Url(key);if(keyBytes.length!==32)throw Error('sleutellengte');
+  const result=await fetch('./data/live-feed.enc.json?c='+Date.now(),{cache:'no-store'});
+  if(!result.ok)throw Error('versleutelde feed HTTP '+result.status);
+  const info=await result.json();
+  if(info.algorithm!=='AES-256-GCM'||!info.nonce||!info.ciphertext)throw Error('feedformaat');
+  const ckey=await crypto.subtle.importKey('raw',keyBytes,{name:'AES-GCM'},false,['decrypt']);
+  const decoded=await crypto.subtle.decrypt({name:'AES-GCM',iv:fromBase64Url(info.nonce)},ckey,fromBase64Url(info.ciphertext));
+  const obj=JSON.parse(new TextDecoder().decode(decoded));
+  if(obj.schemaVersion!==1||!Array.isArray(obj.candidates))throw Error('inhoud');
+  try{localStorage.setItem('whcOwnerFeedKey',key)}catch{}
+  if(fromLink){history.replaceState(null,'',location.pathname+location.search)}
+  state.textContent='Status: '+obj.status+' · Laatste controle '+(obj.updatedAt||'onbekend').replace('T',' ').slice(0,19)+' UTC · '+obj.candidates.length+' voorlopig interessante live aanbiedingen · 0 volledig geverifieerde winstdeals.';
+  if(obj.status==='NOT_CONNECTED'){
+   const p=el('p','muted');p.textContent='Er is nog geen live-aanbiedingsbron aangesloten. De kaartscanner en de winstchecker werken wel, maar echte verkoperprijzen kunnen niet worden opgehaald zonder een eigen bronkoppeling.';target.append(p);return;
+  }
+  if(!obj.candidates.length){const p=el('p','muted');p.textContent='Er zijn geen aanbiedingen die alle voorlopige selectiecriteria halen, of de live bron is tijdelijk niet beschikbaar.';target.append(p);return}
+  for(const d of obj.candidates.slice(0,20)){
+   const row=el('article','card'),head=el('h3');head.textContent=d.name+' · '+(d.firstEdition?'1st Edition':'Unlimited');row.append(head);
+   const info=el('p','meta');info.textContent='Cardmarket product '+d.productId+' · verkoper '+d.seller+' · conditie '+d.condition+' · offer-ID '+d.offerId;row.append(info);
+   const price=el('p');price.textContent='Vraagprijs € '+Number(d.price).toFixed(2)+' · Inkoop incl. verzendbuffer € '+Number(d.allIn).toFixed(2)+' · Mogelijke winst vóór belasting € '+Number(d.netEstimate).toFixed(2)+' · ROI '+Number(d.roiEstimate).toFixed(1)+'%';row.append(price);
+   const caution=el('p','muted');caution.textContent=(d.shippingVerified?'Verzending naar NL volgens bron vermeld.':'Exacte NL-verzending ONBEKEND: berekening met conservatieve buffer.')+' Verkoopwaarde is alleen uit andere vraagprijzen geschat. Controleer kaartcode, conditie en echte verkoopprijs.';row.append(caution);
+   const link=el('a');link.href=cm({id:d.productId});link.target='_blank';link.rel='noopener noreferrer';link.textContent='Open exacte productdruk op Cardmarket';row.append(link);target.append(row);
+  }
+ }catch(err){
+  state.className='error';
+  state.textContent='Privéfeed kan niet worden geopend. De toegangssleutel is onjuist of de gegevens zijn tijdelijk onbereikbaar. Er worden geen fictieve koopkansen getoond.';
+ }
+}
+$('liveReload').onclick=loadLive;
+
+drawCount();load();loadLive();
 </script></body></html>
