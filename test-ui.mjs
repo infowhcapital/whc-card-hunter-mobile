@@ -1,0 +1,11 @@
+import fs from 'node:fs'; import vm from 'node:vm'; import assert from 'node:assert/strict';
+const html=fs.readFileSync('index.html','utf8'); const embedded=html.match(/<script>([\s\S]*?)<\/script>/);
+assert(embedded,'inline JS found'); new vm.Script(embedded[1],{filename:'whc-mobile-ui.js'});
+const local=JSON.parse(fs.readFileSync('data/signals.json','utf8'));assert.equal(local.items.length,100);
+assert(local.items.every(c=>c.id&&c.name&&Number.isInteger(c.score)&&c.score>=0&&c.score<=100));
+assert(local.items.every(c=>!('low' in c)&&!('trend' in c)&&!('avg30' in c)),'no proprietary raw prices are shipped');
+const origin='https://infowhcapital.github.io/whc-card-hunter-mobile/';
+const [a,b]=await Promise.all([fetch(origin),fetch(origin+'data/signals.json')]);
+assert.equal(a.status,200,'HTML HTTP 200');assert.equal(b.status,200,'Data HTTP 200');
+const page=await a.text();const feed=await b.json();assert(page.includes('Card <em>Hunter</em>'),'latest mobile page present');assert.equal(feed.items.length,100);assert.equal(feed.sourceDate,local.sourceDate);
+console.log(JSON.stringify({status:'PASS',pageStatus:a.status,feedStatus:b.status,sourceDate:feed.sourceDate,items:feed.items.length,scriptSyntax:'OK',priceLeak:false}));
