@@ -1,709 +1,1011 @@
 {
-  "source": "Officiele Cardmarket openbare Yu-Gi-Oh-dagprijsgegevens",
+  "algorithmVersion": 2,
+  "source": "Cardmarket openbare productlijst en dagelijkse prijsgids voor Yu-Gi-Oh",
   "sourceDate": "2026-11-07",
-  "updatedAt": "2026-11-08T12:02:29.780Z",
-  "type": "UNVERIFIED_RESEARCH",
-  "warning": "Niet gefilterd op taal, conditie, editie, verzending of voorraad. Geen live aanbiedingen, verkoopprijzen of automatische aankopen.",
+  "updatedAt": "2026-11-08T12:56:55.676Z",
+  "type": "UNVERIFIED_TREND_SIGNALS",
+  "dealsVerified": 0,
+  "warning": "Alleen afgeleide afwijking van trend ten opzichte van 30-daags gemiddelde, geen live individuele aanbieding of bewezen besparing. Controleer per exact idProduct Engels, editie, conditie, verzendkosten en realistische verkoopprijs.",
   "items": [
     {
-      "id": 736483,
-      "name": "Black Luster Soldier",
-      "score": 72,
+      "id": 676341,
+      "name": "Cyber Dragon Sieger",
+      "expansionId": 4620,
+      "score": 55,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 52.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 736302,
-      "name": "Blue-Eyes Toon Dragon",
-      "score": 72,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 102245,
-      "name": "Blue-Eyes White Dragon",
-      "score": 72,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 109670,
-      "name": "Blue-Eyes White Dragon",
-      "score": 72,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 103227,
-      "name": "Elemental HERO Wildedge",
-      "score": 72,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 107318,
-      "name": "Elemental HERO Wildheart",
-      "score": 72,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 109680,
+      "id": 803852,
       "name": "Red-Eyes Black Dragon",
-      "score": 72,
+      "expansionId": 4462,
+      "score": 55,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 53.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 258873,
-      "name": "Black Luster Soldier - Envoy of the Beginning",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 109362,
+      "id": 372228,
       "name": "Blue-Eyes White Dragon",
-      "score": 71,
+      "expansionId": 2455,
+      "score": 54,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 51.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 586746,
-      "name": "Blue-Eyes White Dragon",
-      "score": 71,
+      "id": 244494,
+      "name": "Blue-Eyes Ultimate Dragon",
+      "expansionId": 1236,
+      "score": 50,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 46.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 109367,
-      "name": "Dark Magician Girl",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 245521,
-      "name": "Dark Magician Girl",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 266472,
-      "name": "Dark Magician Girl",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 714351,
-      "name": "Elemental HERO Chaos Neos",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 107225,
-      "name": "Elemental HERO Flame Wingman",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 107226,
-      "name": "Elemental HERO Thunder Giant",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 720332,
-      "name": "Elemental HERO Wildedge",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 735296,
-      "name": "Red-Eyes Black Metal Dragon",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 107650,
-      "name": "Stardust Dragon",
-      "score": 71,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 667387,
-      "name": "Blue-Eyes Alternative White Dragon",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 263166,
-      "name": "Blue-Eyes White Dragon",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 102813,
-      "name": "Dark Magician of Chaos",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 103191,
-      "name": "Elemental HERO Magma Neos",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 720334,
-      "name": "Elemental HERO Shining Flare Wingman",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 103308,
-      "name": "Exodia Necross",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 736296,
-      "name": "Exodia the Forbidden One",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 299064,
-      "name": "Slifer the Sky Dragon",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 105929,
-      "name": "The Flute of Summoning Kuriboh",
-      "score": 70,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 255467,
+      "id": 717719,
       "name": "Dark Magician",
-      "score": 69,
+      "expansionId": 5395,
+      "score": 50,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 46.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 258896,
-      "name": "Dark Paladin",
-      "score": 69,
+      "id": 109556,
+      "name": "Elemental HERO Gaia",
+      "expansionId": 1174,
+      "score": 49,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 45.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 259154,
-      "name": "Exodia the Forbidden One",
-      "score": 69,
+      "id": 430689,
+      "name": "Elemental HERO Liquid Soldier",
+      "expansionId": 2849,
+      "score": 49,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 45.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 244194,
-      "name": "Malefic Stardust Dragon",
-      "score": 69,
+      "id": 813565,
+      "name": "Elemental HERO Sparkman",
+      "expansionId": 6061,
+      "score": 48,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 44.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 297878,
-      "name": "Obelisk the Tormentor",
-      "score": 69,
+      "id": 701569,
+      "name": "Elemental HERO Wildheart",
+      "expansionId": 5247,
+      "score": 48,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 44,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 735284,
-      "name": "Red-Eyes Black Dragon",
-      "score": 69,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 581532,
-      "name": "Black Luster Soldier - Envoy of the Beginning",
-      "score": 68,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 258868,
-      "name": "Buster Blader",
-      "score": 68,
-      "group": "Nostalgie",
-      "spread": "Hoog"
-    },
-    {
-      "id": 737407,
+      "id": 736409,
       "name": "Dark Hole",
-      "score": 68,
+      "expansionId": 4930,
+      "score": 47,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 42.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 244606,
-      "name": "Dark Magician Knight",
-      "score": 68,
+      "id": 255813,
+      "name": "Dark Paladin",
+      "expansionId": 1382,
+      "score": 47,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 42.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 103205,
-      "name": "Elemental HERO Plasma Vice",
-      "score": 68,
+      "id": 869990,
+      "name": "Dark Magician Girl",
+      "expansionId": 6473,
+      "score": 45,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 39.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 109690,
+      "id": 914046,
+      "name": "Jinzo",
+      "expansionId": 6786,
+      "score": 45,
+      "group": "Nostalgie",
+      "drop30": 39.7,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 885455,
+      "name": "Charmer Quartet in Bloom",
+      "expansionId": 6450,
+      "score": 45,
+      "group": "Algemeen",
+      "drop30": 59.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 535083,
+      "name": "Trishula, Dragon of the Ice Barrier",
+      "expansionId": 3540,
+      "score": 45,
+      "group": "Algemeen",
+      "drop30": 60.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 875225,
+      "name": "Winged Kuriboh Sabatiel LV10",
+      "expansionId": 6508,
+      "score": 44,
+      "group": "Nostalgie",
+      "drop30": 39.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 562892,
+      "name": "Dinowrestler Pankratops",
+      "expansionId": 3670,
+      "score": 44,
+      "group": "Algemeen",
+      "drop30": 58.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 754010,
+      "name": "Iron Thunder",
+      "expansionId": 5504,
+      "score": 44,
+      "group": "Algemeen",
+      "drop30": 58.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 694304,
+      "name": "Cyber Dragon Infinity",
+      "expansionId": 4688,
+      "score": 43,
+      "group": "Nostalgie",
+      "drop30": 37.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 813564,
+      "name": "Elemental HERO Sparkman",
+      "expansionId": 6061,
+      "score": 43,
+      "group": "Nostalgie",
+      "drop30": 37.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 913993,
+      "name": "Red-Eyes Black Dragon",
+      "expansionId": 6786,
+      "score": 43,
+      "group": "Nostalgie",
+      "drop30": 37.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 314331,
+      "name": "Slifer the Sky Dragon",
+      "expansionId": 1066,
+      "score": 43,
+      "group": "Nostalgie",
+      "drop30": 37.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 870035,
+      "name": "Slifer the Sky Dragon",
+      "expansionId": 6473,
+      "score": 43,
+      "group": "Nostalgie",
+      "drop30": 37,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 580698,
+      "name": "Destiny Board",
+      "expansionId": 4421,
+      "score": 43,
+      "group": "Algemeen",
+      "drop30": 57.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 255785,
+      "name": "Lava Golem",
+      "expansionId": 1382,
+      "score": 43,
+      "group": "Algemeen",
+      "drop30": 57.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 265717,
+      "name": "Number 11: Big Eye",
+      "expansionId": 1472,
+      "score": 43,
+      "group": "Algemeen",
+      "drop30": 57.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 562900,
+      "name": "Snake Rain",
+      "expansionId": 3670,
+      "score": 43,
+      "group": "Algemeen",
+      "drop30": 57.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 664219,
+      "name": "Black Luster Soldier - Envoy of the Beginning",
+      "expansionId": 4571,
+      "score": 42,
+      "group": "Nostalgie",
+      "drop30": 35.7,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 914010,
+      "name": "Buster Blader",
+      "expansionId": 6786,
+      "score": 42,
+      "group": "Nostalgie",
+      "drop30": 36.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 251719,
+      "name": "Cyber Dragon",
+      "expansionId": 1335,
+      "score": 42,
+      "group": "Nostalgie",
+      "drop30": 35.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 741669,
+      "name": "Called by the Grave",
+      "expansionId": 5404,
+      "score": 42,
+      "group": "Algemeen",
+      "drop30": 55.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 319704,
+      "name": "Delinquent Duo",
+      "expansionId": 2066,
+      "score": 42,
+      "group": "Algemeen",
+      "drop30": 55.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 686103,
+      "name": "True King of All Calamities",
+      "expansionId": 4648,
+      "score": 42,
+      "group": "Algemeen",
+      "drop30": 55.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 759306,
+      "name": "Dark Magician Girl",
+      "expansionId": 5649,
+      "score": 41,
+      "group": "Nostalgie",
+      "drop30": 34.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 245170,
+      "name": "Serpent Night Dragon",
+      "expansionId": 1250,
+      "score": 41,
+      "group": "Algemeen",
+      "drop30": 54.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 579845,
+      "name": "Blue-Eyes Toon Dragon",
+      "expansionId": 1250,
+      "score": 40,
+      "group": "Nostalgie",
+      "drop30": 33.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 869991,
+      "name": "Blue-Eyes White Dragon",
+      "expansionId": 6473,
+      "score": 40,
+      "group": "Nostalgie",
+      "drop30": 33.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 667394,
+      "name": "Dark Magician",
+      "expansionId": 4592,
+      "score": 40,
+      "group": "Nostalgie",
+      "drop30": 33,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 753921,
+      "name": "Lo, the Prayers of the Voiceless Voice",
+      "expansionId": 5504,
+      "score": 40,
+      "group": "Algemeen",
+      "drop30": 53.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 895430,
+      "name": "Zenna's Deceiving Doll Maidens",
+      "expansionId": 6536,
+      "score": 40,
+      "group": "Algemeen",
+      "drop30": 53.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 261609,
+      "name": "Black Luster Soldier",
+      "expansionId": 1439,
+      "score": 39,
+      "group": "Nostalgie",
+      "drop30": 31.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 804095,
+      "name": "Dark Magician Girl",
+      "expansionId": 5933,
+      "score": 39,
+      "group": "Nostalgie",
+      "drop30": 32.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 726326,
       "name": "Exodia the Forbidden One",
-      "score": 68,
+      "expansionId": 4886,
+      "score": 39,
       "group": "Nostalgie",
-      "spread": "Hoog"
+      "drop30": 32.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 260242,
-      "name": "Artorigus, King of the Noble Knights",
-      "score": 58,
+      "id": 320871,
+      "name": "Dark Sage",
+      "expansionId": 1113,
+      "score": 39,
       "group": "Algemeen",
-      "spread": "Hoog"
+      "drop30": 52.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 250214,
-      "name": "Behemoth the King of All Animals",
-      "score": 58,
+      "id": 695573,
+      "name": "Gold Pride - Captain Carrie",
+      "expansionId": 5157,
+      "score": 39,
       "group": "Algemeen",
-      "spread": "Hoog"
+      "drop30": 52.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 241040,
-      "name": "Blackwing - Breeze the Zephyr",
-      "score": 58,
+      "id": 472464,
+      "name": "PSY-Framegear Gamma",
+      "expansionId": 3128,
+      "score": 39,
       "group": "Algemeen",
-      "spread": "Hoog"
+      "drop30": 51.7,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 109462,
-      "name": "Blackwing - Vayu the Emblem of Honor",
-      "score": 58,
+      "id": 861500,
+      "name": "Kewl Tune Reco",
+      "expansionId": 6374,
+      "score": 38,
       "group": "Algemeen",
-      "spread": "Hoog"
+      "drop30": 50.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 102258,
-      "name": "Book of Life",
-      "score": 58,
+      "id": 861505,
+      "name": "Kewl Tune Synchro",
+      "expansionId": 6374,
+      "score": 38,
       "group": "Algemeen",
-      "spread": "Hoog"
+      "drop30": 51,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 763300,
-      "name": "Borrelend Dragon",
-      "score": 58,
+      "id": 823064,
+      "name": "Regenesis",
+      "expansionId": 6008,
+      "score": 38,
       "group": "Algemeen",
-      "spread": "Hoog"
+      "drop30": 50.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 855355,
-      "name": "Borrelshroud Dragon",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 102330,
-      "name": "Byser Shock",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 110629,
-      "name": "Cactus Bouncer",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 580744,
-      "name": "Card of Safe Return",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 244620,
-      "name": "Cipher Soldier",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 813703,
-      "name": "Clockwork Night",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 250250,
-      "name": "Criosphinx",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 770037,
-      "name": "Crystal Wing Synchro Dragon",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 250310,
-      "name": "Cunning of the Six Samurai",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 245219,
-      "name": "D - Time",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 736779,
-      "name": "Dancing Elf",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 107577,
-      "name": "Dark City",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 107560,
-      "name": "Destiny HERO - Double Dude",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 245545,
-      "name": "Divine Wrath",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 110650,
-      "name": "Drill Warrior",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 258850,
-      "name": "Gaia The Fierce Knight",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 660965,
-      "name": "Gaia the Magical Knight",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 257819,
-      "name": "Gear Gigant X",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 657953,
-      "name": "Ghost Ogre & Snow Rabbit",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 695225,
-      "name": "Glory of the King's Hand",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 693451,
-      "name": "Golden Rule",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 736688,
-      "name": "Horn of Heaven",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 104012,
-      "name": "Injection Fairy Lily",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 300644,
-      "name": "Legacy of Yata-Garasu",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 104251,
-      "name": "Lich Lord, King of the Underworld",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 691645,
-      "name": "Lunalight Leo Dancer",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 581205,
-      "name": "Luster Dragon #2",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 763223,
-      "name": "Madolche Ticket",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 580714,
-      "name": "Magic Cylinder",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 250261,
-      "name": "Megarock Dragon",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 736698,
-      "name": "Muka Muka",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 579892,
-      "name": "Mystical Space Typhoon",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 725946,
-      "name": "Mystical Space Typhoon",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 107576,
-      "name": "Neo Space",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 104783,
-      "name": "Neo-Parshath, the Sky Paladin",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 104825,
-      "name": "Nobleman of Crossout",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 580203,
-      "name": "Nobleman of Crossout",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 248621,
-      "name": "Number 17: Leviathan Dragon",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 108909,
-      "name": "Phoenixian Cluster Amaryllis",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 400839,
-      "name": "Predaplant Triphyoverutum",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 250290,
-      "name": "Pulling the Rug",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 759671,
-      "name": "Raidraptor - Pain Lanius",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 105124,
-      "name": "Rainbow Dragon",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 577852,
-      "name": "Right Arm of the Forbidden One",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 105535,
-      "name": "Skull Archfiend of Lightning",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 244340,
-      "name": "Skull Meister",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 250201,
-      "name": "Sky Scourge Invicil",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 244675,
-      "name": "Solar Recharge",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 736425,
-      "name": "Spellbinding Circle",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 258360,
-      "name": "Spider Token",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 578607,
-      "name": "Summoned Skull",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 248768,
-      "name": "System Down",
-      "score": 58,
-      "group": "Algemeen",
-      "spread": "Hoog"
-    },
-    {
-      "id": 707252,
+      "id": 105924,
       "name": "The Fiend Megacyber",
-      "score": 58,
+      "expansionId": 1100,
+      "score": 38,
       "group": "Algemeen",
-      "spread": "Hoog"
+      "drop30": 50.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     },
     {
-      "id": 580901,
-      "name": "The Last Warrior from Another Planet",
-      "score": 58,
+      "id": 293192,
+      "name": "Blue-Eyes Ultimate Dragon",
+      "expansionId": 1066,
+      "score": 37,
+      "group": "Nostalgie",
+      "drop30": 29.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 255574,
+      "name": "Blue-Eyes White Dragon",
+      "expansionId": 1380,
+      "score": 37,
+      "group": "Nostalgie",
+      "drop30": 29.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 372558,
+      "name": "Dark Magician",
+      "expansionId": 2455,
+      "score": 37,
+      "group": "Nostalgie",
+      "drop30": 29.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 767600,
+      "name": "Dark Magician the Magician of Black Magic",
+      "expansionId": 5753,
+      "score": 37,
+      "group": "Nostalgie",
+      "drop30": 29.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 110105,
+      "name": "Proto-Cyber Dragon",
+      "expansionId": 1040,
+      "score": 37,
+      "group": "Nostalgie",
+      "drop30": 29.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 255576,
+      "name": "Red-Eyes Black Dragon",
+      "expansionId": 1380,
+      "score": 37,
+      "group": "Nostalgie",
+      "drop30": 29.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 657489,
+      "name": "Kurikara Divincarnate",
+      "expansionId": 5044,
+      "score": 37,
       "group": "Algemeen",
-      "spread": "Hoog"
+      "drop30": 49.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 813263,
+      "name": "Sky Striker Ace - Hayate",
+      "expansionId": 6061,
+      "score": 37,
+      "group": "Algemeen",
+      "drop30": 49.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 767643,
+      "name": "The Unstoppable Exodia Incarnate",
+      "expansionId": 5753,
+      "score": 36,
+      "group": "Nostalgie",
+      "drop30": 28.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 684343,
+      "name": "Blackwing Armor Master",
+      "expansionId": 5066,
+      "score": 36,
+      "group": "Algemeen",
+      "drop30": 48.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 753975,
+      "name": "Goblin Biker Big Gabonga",
+      "expansionId": 5504,
+      "score": 36,
+      "group": "Algemeen",
+      "drop30": 47.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 697374,
+      "name": "Odd-Eyes Pendulum Dragon",
+      "expansionId": 4707,
+      "score": 36,
+      "group": "Algemeen",
+      "drop30": 48.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 684311,
+      "name": "Toon Bookmark",
+      "expansionId": 5066,
+      "score": 36,
+      "group": "Algemeen",
+      "drop30": 47.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 868337,
+      "name": "Topologic Blaster Dragon",
+      "expansionId": 6431,
+      "score": 36,
+      "group": "Algemeen",
+      "drop30": 47.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 798375,
+      "name": "Triple Tactics Thrust",
+      "expansionId": 5848,
+      "score": 36,
+      "group": "Algemeen",
+      "drop30": 48,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 873164,
+      "name": "Elemental HERO Thunder Giant - Voltic Thunder",
+      "expansionId": 6433,
+      "score": 35,
+      "group": "Nostalgie",
+      "drop30": 26.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 668124,
+      "name": "Stardust Dragon",
+      "expansionId": 4596,
+      "score": 35,
+      "group": "Nostalgie",
+      "drop30": 27.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 724086,
+      "name": "Diabellstar the Black Witch",
+      "expansionId": 5421,
+      "score": 35,
+      "group": "Algemeen",
+      "drop30": 46.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 753922,
+      "name": "Saffira, Dragon Queen of the Voiceless Voice",
+      "expansionId": 5504,
+      "score": 35,
+      "group": "Algemeen",
+      "drop30": 46.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 866607,
+      "name": "Spellbook of the Grand Circle",
+      "expansionId": 6429,
+      "score": 35,
+      "group": "Algemeen",
+      "drop30": 46.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 749628,
+      "name": "Token (OCG)",
+      "expansionId": 5570,
+      "score": 35,
+      "group": "Algemeen",
+      "drop30": 47.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 785708,
+      "name": "Dark Magician",
+      "expansionId": 1176,
+      "score": 34,
+      "group": "Nostalgie",
+      "drop30": 25.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 717720,
+      "name": "Elemental HERO Neos",
+      "expansionId": 5395,
+      "score": 34,
+      "group": "Nostalgie",
+      "drop30": 25.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 580066,
+      "name": "Call of the Haunted",
+      "expansionId": 4419,
+      "score": 34,
+      "group": "Algemeen",
+      "drop30": 44.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 862050,
+      "name": "Hecahands Yadel",
+      "expansionId": 6374,
+      "score": 34,
+      "group": "Algemeen",
+      "drop30": 45,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 668125,
+      "name": "Number 39: Utopia",
+      "expansionId": 4596,
+      "score": 34,
+      "group": "Algemeen",
+      "drop30": 45.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 677136,
+      "name": "The Winged Dragon of Ra - Sphere Mode",
+      "expansionId": 4626,
+      "score": 34,
+      "group": "Algemeen",
+      "drop30": 45.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 806162,
+      "name": "Clockwork Knight",
+      "expansionId": 5902,
+      "score": 33,
+      "group": "Algemeen",
+      "drop30": 43.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 848915,
+      "name": "DoomZ XII Zero - Drastea",
+      "expansionId": 6211,
+      "score": 33,
+      "group": "Algemeen",
+      "drop30": 44.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 890921,
+      "name": "Evolzar Laggia",
+      "expansionId": 6537,
+      "score": 33,
+      "group": "Algemeen",
+      "drop30": 43.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 843245,
+      "name": "Galatea-I, the Orcust Automaton",
+      "expansionId": 6069,
+      "score": 33,
+      "group": "Algemeen",
+      "drop30": 44.6,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 772897,
+      "name": "Night Lizard",
+      "expansionId": 5777,
+      "score": 33,
+      "group": "Algemeen",
+      "drop30": 43.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 820250,
+      "name": "Pantheism of the Monarchs",
+      "expansionId": 5989,
+      "score": 33,
+      "group": "Algemeen",
+      "drop30": 44,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 814560,
+      "name": "Schwarzschild Infinity Dragon",
+      "expansionId": 5961,
+      "score": 33,
+      "group": "Algemeen",
+      "drop30": 43.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 691992,
+      "name": "Tsumuha-Kutsunagi the Lord of Swords",
+      "expansionId": 5242,
+      "score": 33,
+      "group": "Algemeen",
+      "drop30": 43.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 688128,
+      "name": "Chaos Ancient Gear Giant",
+      "expansionId": 4655,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 42.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 741690,
+      "name": "Dark Ruler No More",
+      "expansionId": 5404,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 42.4,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 778218,
+      "name": "Disablaster the Negation Fortress",
+      "expansionId": 5687,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 43.3,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 813273,
+      "name": "Divine Arsenal AA-ZEUS - Sky Thunder",
+      "expansionId": 6061,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 42,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 522675,
+      "name": "EvilTwin Ki-sikil",
+      "expansionId": 3444,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 42.7,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 890917,
+      "name": "Lev Shaddoll Fusion",
+      "expansionId": 6537,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 43.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 780734,
+      "name": "Number C32: Shark Drake LeVeiss",
+      "expansionId": 5840,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 43.1,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 751130,
+      "name": "Photon Delta Wing",
+      "expansionId": 5503,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 42.7,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 692712,
+      "name": "Purrely Pretty Memory",
+      "expansionId": 5145,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 42.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 766776,
+      "name": "Ragnaraika Bloom",
+      "expansionId": 5578,
+      "score": 32,
+      "group": "Algemeen",
+      "drop30": 43.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 566878,
+      "name": "Bahalutiya, the Grand Radiance",
+      "expansionId": 3786,
+      "score": 31,
+      "group": "Algemeen",
+      "drop30": 41.5,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 722485,
+      "name": "Epurrely Noir",
+      "expansionId": 5319,
+      "score": 31,
+      "group": "Algemeen",
+      "drop30": 40.9,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 522685,
+      "name": "EvilTwin Lil-la",
+      "expansionId": 3444,
+      "score": 31,
+      "group": "Algemeen",
+      "drop30": 41.7,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 606672,
+      "name": "Exosister Mikailis",
+      "expansionId": 4396,
+      "score": 31,
+      "group": "Algemeen",
+      "drop30": 41.2,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
+    },
+    {
+      "id": 798821,
+      "name": "Stream, Dragon Ruler of Droplets",
+      "expansionId": 5848,
+      "score": 31,
+      "group": "Algemeen",
+      "drop30": 41.8,
+      "signal": "TREND_BELOW_30D_AVERAGE",
+      "verified": false
     }
   ]
 }

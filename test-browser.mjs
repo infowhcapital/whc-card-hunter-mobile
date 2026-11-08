@@ -9,6 +9,11 @@ try{
  const firstCount=await page.locator('#cards .card').count();
  assert.equal(firstCount,25);
  const firstName=(await page.locator('#cards .card h3').first().innerText()).trim();
+ const firstCardId=(await page.locator('#cards .card .meta').first().innerText()).split('ID ')[1]?.split(' ')[0];
+ const directHref=await page.locator('#cards .card a').first().getAttribute('href');
+ assert(directHref?.includes('idProduct='+firstCardId),'Exact Cardmarket product ID link');
+ assert(directHref?.includes('language=1')&&directHref?.includes('minCondition=2'),'English NM filters');
+ assert(!directHref?.includes('Products/Search'),'No generic name search');
  await page.locator('#search').fill('___niet_bestaande_kaart_');
  assert.equal(await page.locator('#cards .card').count(),0);
  await page.locator('#search').fill(firstName);
