@@ -1,30 +1,22 @@
-# WHC Card Hunter — mobiele onderzoeksapp
+# WHC Card Hunter — mobiele prijsdalingsonderzoeker
 
 **Open zonder GitHub-login:** https://infowhcapital.github.io/whc-card-hunter-mobile/
 
-Dit is de afzonderlijke PUBLIEKE mobiele voorkant van WHC Card Hunter, niet de private prijsdatabase.
+## Wat werkt (8 november 2026, mobile v0.4)
+- Dagelijkse publieke Cardmarket-gegevens worden op de aangesloten WHCapital-Windows-PC onderzocht.
+- De app toont 100 onderzoekskaarten waarvan de recente Cardmarket-prijstrend minstens 20% onder het 30-daagse gemiddelde van dezelfde exacte productdruk ligt. Dit is een statistisch **onderzoekssignaal**, geen daadwerkelijk verkochte of aangeboden koopdeal.
+- De link gebruikt Cardmarket's eigen unieke product-ID: `https://www.cardmarket.com/en/YuGiOh/Products?idProduct=...&language=1&minCondition=2`.
+- Daardoor krijg je een **specifieke druk** in plaats van een naamzoekresultaat. De filters zijn Engels en minimaal Near Mint. De verkoper, editie, gedrukte setcode en verzendkosten moet je op Cardmarket nog controleren.
+- Zoeken op naam/product-ID/set-ID, filteren, favorieten en een schatting van netto winst en ROI.
+- Via een gewone mobiele browser te gebruiken, geen GitHub-login en geen Python.
 
-## Wat de app echt doet
-- Toont een kleine, geanonimiseerde/afgeleide selectie van dagelijks onderzochte Yu-Gi-Oh-kaarten (zonder ruwe Cardmarket-prijzen).
-- Zoekt op naam, filtert op nostalgische/algemene kaarten, sorteert op heuristische onderzoekscore.
-- Opent een Cardmarket-**zoekpagina** (niet gegarandeerd exacte productversie).
-- Bewaart favorieten in je eigen browser.
-- Berekent op basis van zelf gecontroleerde aankoop- en verkoopprijzen de verwachte winst, kosten en ROI.
-- Werkt vanaf een Android-browser zonder installatie.
+## Geen bewezen aanbiedingen
+**Geverifieerde winstgevende live deals: 0.** De officiële gratis prijsbestanden bevatten geen individuele verkopers, daadwerkelijke verzendkosten, taal/conditie of actuele listing. Een recent lagere trendprijs is niet automatisch een goedkoop exemplaar. Ook de risicoscores zijn geen kans op winst. Geen automatisch aankopen en geen ruwe Cardmarket-prijzen publiek tonen.
 
-## Belangrijke beperkingen
-- Scores betekenen alleen een opvallend verschil in dagelijkse openbare prijsdata, geen live aanbieding.
-- Geen automatische filter voor Engels, setcode, druk, editie, conditie, verkoper of verzendkosten.
-- Geen volautomatische marktplaats-sniper, geen directe aankoop en geen gegarandeerde winst.
-- Geen ruwe prijsdata openbaar publiceren; controleer actuele prijzen op Cardmarket.
-- De publieke kaartselectie wordt alleen bijgewerkt wanneer de afzonderlijke Windows-computer WHCapital aan en ingelogd is en de dagelijkse taak succesvol uitvoert. Als de bron faalt, blijft de oude datum zichtbaar.
+De programma's staan in twee afzonderlijke repositories: deze openbare mobiele site en een *private* prijsmonitor `infowhcapital/whc-card-hunter`. De dagelijkse update werkt alleen met de WHCapital-PC aan en ingelogd (Windows Taakplanner 08:10).
 
-Privé-bron: `infowhcapital/whc-card-hunter`, niet toegankelijk voor bezoekers van de mobiele website.
-
-## Test
-`node test-ui.mjs` — controleert de online HTTP-respons, datapakket, JS-syntax en of er geen ruwe Cardmarket-prijzen in de publieke feed zitten.
-
-### Echte mobiele browsertest
-Op 8 november 2026 uitgevoerd op Windows met Microsoft Edge/Chromium, viewport 390×844. De pagina laadde 25 kaarten, zoeken, favorieten, winstcalculator (€5,45 testresultaat) en geen JavaScript-fouten: **PASS**.
-
-Bij herhalen op dezelfde Windows-PC: `npm install --no-save --no-package-lock --ignore-scripts playwright-core@1.65.0` gevolgd door `node test-browser.mjs`. Playwright-core gebruikt de al geïnstalleerde Microsoft Edge en downloadt geen browser.
+## Bewijs & tests
+- `node test-ui.mjs` — syntax, data, website HTTP 200, 100 records, geen ruwe openbare prijsdata: PASS.
+- `node test-browser.mjs` — Edge/Chromium mobiele viewport 390×844, 25 kaarten, zoeken, favorieten, netto winstberekening, exact idProduct in elke link met English/NM-filters: PASS, 0 JS errors.
+- Cardmarket zelf beantwoordde de geautomatiseerde productpagina-inspectie met Cloudflare HTTP 403. De directe ID-route is gebaseerd op hun officiële publicatie. Het werkelijke externe bestemmingsscherm is daarom niet onafhankelijk in de headless browser bewezen.
+- Actualisatie van nieuwe bron-dag en het automatisch signaleren van concrete deals: nog niet aangetoond.
