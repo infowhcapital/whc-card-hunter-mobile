@@ -1,0 +1,709 @@
+{
+  "source": "Officiele Cardmarket openbare Yu-Gi-Oh-dagprijsgegevens",
+  "sourceDate": "2026-11-07",
+  "updatedAt": "2026-11-08T12:02:29.780Z",
+  "type": "UNVERIFIED_RESEARCH",
+  "warning": "Niet gefilterd op taal, conditie, editie, verzending of voorraad. Geen live aanbiedingen, verkoopprijzen of automatische aankopen.",
+  "items": [
+    {
+      "id": 736483,
+      "name": "Black Luster Soldier",
+      "score": 72,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 736302,
+      "name": "Blue-Eyes Toon Dragon",
+      "score": 72,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 102245,
+      "name": "Blue-Eyes White Dragon",
+      "score": 72,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 109670,
+      "name": "Blue-Eyes White Dragon",
+      "score": 72,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 103227,
+      "name": "Elemental HERO Wildedge",
+      "score": 72,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 107318,
+      "name": "Elemental HERO Wildheart",
+      "score": 72,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 109680,
+      "name": "Red-Eyes Black Dragon",
+      "score": 72,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 258873,
+      "name": "Black Luster Soldier - Envoy of the Beginning",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 109362,
+      "name": "Blue-Eyes White Dragon",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 586746,
+      "name": "Blue-Eyes White Dragon",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 109367,
+      "name": "Dark Magician Girl",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 245521,
+      "name": "Dark Magician Girl",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 266472,
+      "name": "Dark Magician Girl",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 714351,
+      "name": "Elemental HERO Chaos Neos",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 107225,
+      "name": "Elemental HERO Flame Wingman",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 107226,
+      "name": "Elemental HERO Thunder Giant",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 720332,
+      "name": "Elemental HERO Wildedge",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 735296,
+      "name": "Red-Eyes Black Metal Dragon",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 107650,
+      "name": "Stardust Dragon",
+      "score": 71,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 667387,
+      "name": "Blue-Eyes Alternative White Dragon",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 263166,
+      "name": "Blue-Eyes White Dragon",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 102813,
+      "name": "Dark Magician of Chaos",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 103191,
+      "name": "Elemental HERO Magma Neos",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 720334,
+      "name": "Elemental HERO Shining Flare Wingman",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 103308,
+      "name": "Exodia Necross",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 736296,
+      "name": "Exodia the Forbidden One",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 299064,
+      "name": "Slifer the Sky Dragon",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 105929,
+      "name": "The Flute of Summoning Kuriboh",
+      "score": 70,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 255467,
+      "name": "Dark Magician",
+      "score": 69,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 258896,
+      "name": "Dark Paladin",
+      "score": 69,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 259154,
+      "name": "Exodia the Forbidden One",
+      "score": 69,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 244194,
+      "name": "Malefic Stardust Dragon",
+      "score": 69,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 297878,
+      "name": "Obelisk the Tormentor",
+      "score": 69,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 735284,
+      "name": "Red-Eyes Black Dragon",
+      "score": 69,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 581532,
+      "name": "Black Luster Soldier - Envoy of the Beginning",
+      "score": 68,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 258868,
+      "name": "Buster Blader",
+      "score": 68,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 737407,
+      "name": "Dark Hole",
+      "score": 68,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 244606,
+      "name": "Dark Magician Knight",
+      "score": 68,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 103205,
+      "name": "Elemental HERO Plasma Vice",
+      "score": 68,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 109690,
+      "name": "Exodia the Forbidden One",
+      "score": 68,
+      "group": "Nostalgie",
+      "spread": "Hoog"
+    },
+    {
+      "id": 260242,
+      "name": "Artorigus, King of the Noble Knights",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 250214,
+      "name": "Behemoth the King of All Animals",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 241040,
+      "name": "Blackwing - Breeze the Zephyr",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 109462,
+      "name": "Blackwing - Vayu the Emblem of Honor",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 102258,
+      "name": "Book of Life",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 763300,
+      "name": "Borrelend Dragon",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 855355,
+      "name": "Borrelshroud Dragon",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 102330,
+      "name": "Byser Shock",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 110629,
+      "name": "Cactus Bouncer",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 580744,
+      "name": "Card of Safe Return",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 244620,
+      "name": "Cipher Soldier",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 813703,
+      "name": "Clockwork Night",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 250250,
+      "name": "Criosphinx",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 770037,
+      "name": "Crystal Wing Synchro Dragon",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 250310,
+      "name": "Cunning of the Six Samurai",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 245219,
+      "name": "D - Time",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 736779,
+      "name": "Dancing Elf",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 107577,
+      "name": "Dark City",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 107560,
+      "name": "Destiny HERO - Double Dude",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 245545,
+      "name": "Divine Wrath",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 110650,
+      "name": "Drill Warrior",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 258850,
+      "name": "Gaia The Fierce Knight",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 660965,
+      "name": "Gaia the Magical Knight",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 257819,
+      "name": "Gear Gigant X",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 657953,
+      "name": "Ghost Ogre & Snow Rabbit",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 695225,
+      "name": "Glory of the King's Hand",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 693451,
+      "name": "Golden Rule",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 736688,
+      "name": "Horn of Heaven",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 104012,
+      "name": "Injection Fairy Lily",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 300644,
+      "name": "Legacy of Yata-Garasu",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 104251,
+      "name": "Lich Lord, King of the Underworld",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 691645,
+      "name": "Lunalight Leo Dancer",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 581205,
+      "name": "Luster Dragon #2",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 763223,
+      "name": "Madolche Ticket",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 580714,
+      "name": "Magic Cylinder",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 250261,
+      "name": "Megarock Dragon",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 736698,
+      "name": "Muka Muka",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 579892,
+      "name": "Mystical Space Typhoon",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 725946,
+      "name": "Mystical Space Typhoon",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 107576,
+      "name": "Neo Space",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 104783,
+      "name": "Neo-Parshath, the Sky Paladin",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 104825,
+      "name": "Nobleman of Crossout",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 580203,
+      "name": "Nobleman of Crossout",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 248621,
+      "name": "Number 17: Leviathan Dragon",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 108909,
+      "name": "Phoenixian Cluster Amaryllis",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 400839,
+      "name": "Predaplant Triphyoverutum",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 250290,
+      "name": "Pulling the Rug",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 759671,
+      "name": "Raidraptor - Pain Lanius",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 105124,
+      "name": "Rainbow Dragon",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 577852,
+      "name": "Right Arm of the Forbidden One",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 105535,
+      "name": "Skull Archfiend of Lightning",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 244340,
+      "name": "Skull Meister",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 250201,
+      "name": "Sky Scourge Invicil",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 244675,
+      "name": "Solar Recharge",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 736425,
+      "name": "Spellbinding Circle",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 258360,
+      "name": "Spider Token",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 578607,
+      "name": "Summoned Skull",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 248768,
+      "name": "System Down",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 707252,
+      "name": "The Fiend Megacyber",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    },
+    {
+      "id": 580901,
+      "name": "The Last Warrior from Another Planet",
+      "score": 58,
+      "group": "Algemeen",
+      "spread": "Hoog"
+    }
+  ]
+}

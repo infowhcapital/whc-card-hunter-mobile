@@ -1,1 +1,69 @@
-﻿<!doctype html><html lang=nl><head><meta name=viewport content=width=device-width,initial-scale=1><meta charset=utf-8><title>WHC Card Hunter</title></head><body><h1>WHC Card Hunter mobiel</h1><p>Site bereikbaar; scanner wordt gekoppeld.</p></body></html>
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/><meta name="theme-color" content="#061527"/><meta name="description" content="WHC Card Hunter: Yu-Gi-Oh marktprijs-signalen, favorieten en winstcontrole op je telefoon."/><title>WHC Card Hunter — Grandpa's Card Shop</title>
+<style>
+:root{color-scheme:dark;--bg:#061524;--surface:#10273d;--border:#344d60;--gold:#f1cd82;--sub:#abc2d3;--good:#83e6b4;--bad:#ffbdad}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(145deg,#061321 0%,#0a1c30 65%,#061320 100%);color:#f2f6fa;font:14px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif}main{max-width:940px;margin:auto;padding:18px 13px 65px}
+header{margin:5px 0 20px}.brand{color:var(--gold);font-size:12px;letter-spacing:.19em;font-weight:900}h1{font-size:clamp(34px,8vw,53px);line-height:1.04;letter-spacing:-.05em;margin:10px 0}h1 em{font-style:normal;color:var(--gold)}h2{margin:0 0 10px;font-size:21px}p{margin:7px 0}.muted,small{color:var(--sub)}.box{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:15px;margin:12px 0}.warning{border-left:3px solid #e8c274;background:#263141;border-radius:0 10px 10px 0;padding:12px;font-size:13px}
+.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:13px 0}.metrics>div{border:1px solid var(--border);border-radius:10px;background:#091c2d;padding:10px}.metrics b{display:block;color:var(--gold);font-size:22px}.metrics small{display:block;font-size:11px;line-height:1.25}
+button,input,select{font:inherit}button{border:1px solid #b59659;background:linear-gradient(120deg,#f2d493,#dbb774);color:#142132;border-radius:9px;padding:10px 12px;min-height:44px;font-weight:800;cursor:pointer}button.secondary{background:#1b3448;color:var(--gold);border-color:#647589}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #f0d69a;outline-offset:2px}
+nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:12px 0}nav button{background:#132c43;color:#dce7ed;border-color:#456076}nav button.active{background:#374657;border-color:#d6b777;color:var(--gold)}
+label{display:block;font-weight:650;font-size:12px;color:#d9e6ef;margin:6px 0}input,select{width:100%;min-height:44px;background:#081b2d;color:#f0f3f8;border:1px solid #526d84;border-radius:9px;padding:9px}
+.controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.controls .wide{grid-column:1/-1}
+.card{padding:14px;border-radius:12px;border:1px solid #385772;background:#0b2439;margin:10px 0}.card h3{font-size:17px;line-height:1.35;margin:0 0 5px}.line{height:1px;background:#304c63;margin:12px 0}.meta{color:var(--sub);font-size:12px}.row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}.score{color:var(--gold);font-size:17px;font-weight:900}.tag{font-size:11px;display:inline-block;border:1px solid #7a6a50;color:#e8d1a2;border-radius:6px;padding:3px 7px;margin:3px 4px 4px 0}.card .row{margin-top:11px}.card button{min-height:34px;padding:6px 9px;font-size:12px}.card a{color:var(--gold);font-weight:700}a{color:var(--gold)}
+.panelhide{display:none!important}.error{color:var(--bad)}.good{color:var(--good)}.result{background:#071c2c;border:1px solid var(--border);border-radius:10px;padding:12px;margin:12px 0}#dataStatus{font-size:13px}.buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+footer{text-align:center;color:#9cb1bf;font-size:12px;margin:22px 0 0}.checkrow{display:flex;gap:9px;align-items:center;margin-top:10px}.checkrow input{width:auto;min-height:auto;accent-color:var(--gold)}.checkrow label{margin:0}
+@media(min-width:700px){main{padding:28px}.controls{grid-template-columns:repeat(4,minmax(0,1fr))}.controls .wide{grid-column:span 2}}
+</style></head><body><main>
+<header><div class="brand">WHC · GRANDPA'S CARD SHOP</div><h1>Card <em>Hunter</em></h1><p class="muted">Mobiele onderzoeksscanner voor Yu-Gi-Oh-kaarten. Geen login, installatie of Python nodig.</p></header>
+<div class="warning"><b>Onderzoekssignalen, geen bevestigde koopjes.</b> Officiële dagelijkse prijsbestanden bevatten niet de exacte Engelse aanbieder, kaartconditie, verzending of een live aanbieding. De kaartnaam kan meerdere versies hebben. Controleer dit altijd op Cardmarket.</div>
+<div class="metrics"><div><b id="n">—</b><small>Kandidaten</small></div><div><b id="date">—</b><small>Laatste bronmeting</small></div><div><b id="saved">0</b><small>Mijn favorieten</small></div></div>
+<nav aria-label="App functies"><button id="tabScan" class="active">Scanner</button><button id="tabFav">Favorieten</button><button id="tabCalc">Winst</button></nav>
+<section id="scan"><div class="box"><div class="row"><h2>Kaarten onderzoeken</h2><button class="secondary" id="refresh">Vernieuw</button></div><p id="dataStatus" role="status">Gegevens ophalen…</p>
+<div class="controls"><div class="wide"><label for="search">Kaartnaam</label><input id="search" placeholder="Blue-Eyes, Dark Magician, ..."></div><div><label for="kind">Soort kaart</label><select id="kind"><option value="all">Alle</option><option value="Nostalgie">Nostalgie</option><option value="Algemeen">Overige</option></select></div><div><label for="order">Sorteer op</label><select id="order"><option value="score">Onderzoekscore</option><option value="name">Naam A–Z</option></select></div></div>
+<p id="info" class="muted">Nog geen data geladen.</p><div id="cards"></div><button id="more" class="secondary panelhide">Meer tonen</button>
+</div></section>
+<section id="favorites" class="panelhide"><div class="box"><h2>Mijn opgeslagen kaarten</h2><p class="muted">Bewaard op dit toestel in je browser; gegevens delen niet automatisch tussen apparaten.</p><div id="favCards"></div></div></section>
+<section id="calculator" class="panelhide"><div class="box"><h2>Werkelijke winst berekenen</h2><p class="muted">Gebruik hier uitsluitend bedragen van de exacte kaart die je op een actuele aanbieding hebt gecontroleerd.</p>
+<div class="controls">
+<div><label for="buy">Aankoopprijs (€)</label><input id="buy" type="number" value="5" min="0" step=".01"></div>
+<div><label for="incoming">Inkoopverzending (€)</label><input id="incoming" type="number" value="2.50" min="0" step=".01"></div>
+<div><label for="sell">Realistische verkoopprijs (€)</label><input id="sell" type="number" value="15" min="0" step=".01"></div>
+<div><label for="fee">Verkoopcommissie (%)</label><input id="fee" type="number" value="5" min="0" max="99" step=".1"></div>
+<div><label for="outgoing">Zelf betaalde verkoopverzending (€)</label><input id="outgoing" type="number" value="0" min="0" step=".01"></div>
+<div><label for="pack">Verpakking (€)</label><input id="pack" type="number" value=".30" min="0" step=".01"></div>
+<div><label for="risk">Risico (€)</label><input id="risk" type="number" value="1" min="0" step=".01"></div>
+<div><label for="budget">Max. inkoop (€)</label><input id="budget" type="number" value="20" min="0" step=".01"></div>
+</div>
+<div class="checkrow"><input id="verified" type="checkbox"><label for="verified">Exacte kaartdruk, Engels, staat, live aanbieding en verzendkosten gecontroleerd</label></div>
+<div class="buttons"><button id="calculate">Bereken mijn koopadvies</button><button id="reset" class="secondary">Herstel invoer</button></div><div class="result" id="calcResult" role="status">Nog geen berekening.</div>
+</div></section>
+<footer>WHC Card Hunter · Gebruik op eigen risico · Geen automatische aankopen · Niet verbonden met Cardmarket.</footer>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+let feed=null,view=[],offset=0,favs={};try{favs=JSON.parse(localStorage.getItem('whcHunterFavs')||'{}')||{}}catch{}
+const numFmt=n=>Number(n).toLocaleString('nl-NL');
+const euro=n=>'€ '+Number(n).toFixed(2).replace('.',',');
+function save(){try{localStorage.setItem('whcHunterFavs',JSON.stringify(favs))}catch{};drawCount()}
+function drawCount(){$('saved').textContent=Object.keys(favs).length}
+function tab(t){for(const [k,v] of [['Scan','scan'],['Fav','favorites'],['Calc','calculator']]){$('tab'+k).classList.toggle('active',k===t);$(v).classList.toggle('panelhide',k!==t)}if(t==='Fav')drawFavs()}
+$('tabScan').onclick=()=>tab('Scan');$('tabFav').onclick=()=>tab('Fav');$('tabCalc').onclick=()=>tab('Calc');
+const el=(name,cls)=>{const e=document.createElement(name);if(cls)e.className=cls;return e};
+const cm=c=>'https://www.cardmarket.com/en/YuGiOh/Products/Search?searchString='+encodeURIComponent(c.name);
+function renderCard(c,parent){
+const item=el('article','card'),heading=el('h3');heading.textContent=c.name;item.append(heading);
+const meta=el('p','meta');meta.textContent='Cardmarket product-ID '+c.id+' · '+c.group;item.append(meta);
+const row=el('div','row'),strength=el('span','score'),flag=el('span','tag');strength.textContent='Score '+c.score+'/100';flag.textContent='Prijsverschil: '+c.spread;row.append(strength,flag);item.append(row);
+const explain=el('p','muted');explain.textContent='Score op basis van marktafwijking en herkenbaarheid; geen winstkans, conditiecheck of verkoopbewijs.';item.append(explain);
+const actions=el('div','row'),a=el('a'),b=el('button','secondary');a.href=cm(c);a.target='_blank';a.rel='noopener noreferrer';a.textContent='Zoek op Cardmarket';b.textContent=favs[c.id]?'★ Bewaard':'☆ Bewaar';b.onclick=()=>{if(favs[c.id])delete favs[c.id];else favs[c.id]=c;save();b.textContent=favs[c.id]?'★ Bewaard':'☆ Bewaar';if(!$('favorites').classList.contains('panelhide'))drawFavs()};actions.append(a,b);item.append(actions);parent.append(item)}
+function drawFavs(){const root=$('favCards');root.replaceChildren();const ids=Object.keys(favs);if(!ids.length)root.textContent='Nog geen favorieten.';ids.forEach(id=>renderCard((feed?.items||[]).find(x=>String(x.id)===id)||favs[id],root))}
+function render(reset=true){if(!feed)return;if(reset){offset=0;$('cards').replaceChildren();const q=$('search').value.trim().toLowerCase(),k=$('kind').value;view=feed.items.filter(c=>(k==='all'||c.group===k)&&(!q||c.name.toLowerCase().includes(q)));if($('order').value==='name')view.sort((a,b)=>a.name.localeCompare(b.name));else view.sort((a,b)=>b.score-a.score)}for(const c of view.slice(offset,offset+25))renderCard(c,$('cards'));offset=Math.min(offset+25,view.length);$('more').classList.toggle('panelhide',offset>=view.length);$('info').textContent=offset+' / '+view.length+' onderzoekskandidaten. Taal/druk/conditie nog niet geverifieerd.';if(!view.length)$('cards').textContent='Geen kaarten gevonden.'}
+$('more').onclick=()=>render(false);for(const id of ['search','kind','order'])$(id).addEventListener('input',()=>render(true));
+function setFeed(obj,cached){if(!obj||!Array.isArray(obj.items)||!obj.sourceDate)throw Error('Ongeldig datapakket');feed=obj;$('n').textContent=numFmt(obj.items.length);$('date').textContent=obj.sourceDate.slice(5);$('dataStatus').textContent=(cached?'Offline-cache':'Online gegevens')+' · Cardmarket-brondag '+obj.sourceDate+' · laatst samengesteld '+String(obj.updatedAt||'').slice(0,16).replace('T',' ')+' UTC';render(true)}
+async function load(){const r=$('refresh'),s=$('dataStatus');r.disabled=true;s.textContent='Dagelijkse onderzoekslijst ophalen…';s.className='muted';try{const resp=await fetch('./data/signals.json?ts='+Date.now(),{cache:'no-store'});if(!resp.ok)throw Error('Server antwoord '+resp.status);const json=await resp.json();setFeed(json,false);try{localStorage.setItem('whcHunterCache',JSON.stringify(json))}catch{}}catch(e){try{const old=JSON.parse(localStorage.getItem('whcHunterCache')||'null');if(old){setFeed(old,true);s.textContent+=' · LIVE VERNIEUWEN MISLUKT: '+e.message}else throw Error('cache ontbreekt')}catch{s.className='error';s.textContent='Geen actuele gegevens beschikbaar: '+e.message+'. Er worden geen verzonnen koopkansen getoond.'}}finally{r.disabled=false}}
+$('refresh').onclick=load;
+function calculate(){const ids=['buy','incoming','sell','fee','outgoing','pack','risk','budget'];if(ids.some(x=>$((x)).value.trim()===''||!Number.isFinite(Number($(x).value))||Number($(x).value)<0)||Number($('fee').value)>=100){$('calcResult').textContent='Controleer de bedragen en commissie.';return}const v=x=>Number($(x).value),cost=v('buy')+v('incoming'),profit=v('sell')*(1-v('fee')/100)-cost-v('outgoing')-v('pack')-v('risk'),roi=cost>0?100*profit/cost:0,pass=cost<=v('budget')&&profit>=4&&roi>=35;const approved=pass&&$('verified').checked;$('calcResult').replaceChildren();const b=el('strong',approved?'good':'error');b.textContent=approved?'REKENKUNDIG KOOPKANDIDAAT':'NIET KOPEN / NOG ONDERZOEKEN';const p=el('p');p.textContent='Totale inkoop '+euro(cost)+' · Geschatte nettowinst vóór belasting '+euro(profit)+' · ROI '+roi.toFixed(1).replace('.',',')+'%';const note=el('small');note.textContent='Drempels: maximaal €'+v('budget')+' all-in, minimaal €4 winst en 35% ROI. Verkoopwaarde en conditie blijven eigen verificatie vereisen.';$('calcResult').append(b,p,note)}
+$('calculate').onclick=calculate;$('reset').onclick=()=>{location.reload()};
+drawCount();load();
+</script></body></html>
